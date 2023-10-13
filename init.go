@@ -11,6 +11,8 @@ func main() {
 	gamelog := player.GetGameLog(playerLink, "2022")
 
 	for _, n := range gamelog {
-		fmt.Println(n.Text())
+		switch n.Find("[data-stat]") {
+
+		}
 	}
 }
