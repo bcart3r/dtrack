@@ -1,4 +1,4 @@
-package helpers
+package page
 
 import (
 	"log"
@@ -10,7 +10,7 @@ import (
 const BaseLink = "https://www.sports-reference.com/cfb/"
 const SearchLink = BaseLink + "search/search.fcgi?hint=&search="
 
-func GetPage(link string) *goquery.Document {
+func Get(link string) *goquery.Document {
 	res, err := http.Get(link)
 	if err != nil {
 		log.Fatal(err)
